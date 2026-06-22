@@ -2008,3 +2008,214 @@ a.back-to-top {
     border-radius: 50%;
     display: inline-block;
 }
+
+/* ── Experience Section ── */
+.experience-timeline {
+    position: relative;
+    padding-left: 40px;
+    max-width: 860px;
+    margin: 0 auto;
+}
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #fd562a;
+    border-radius: 3px;
+}
+.exp-item {
+    position: relative;
+    margin-bottom: 48px;
+}
+.exp-dot {
+    position: absolute;
+    left: -36px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    background: #fd562a;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 3px #fd562a;
+}
+.exp-content {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 28px 32px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.exp-date {
+    display: inline-block;
+    background: #fff3ef;
+    color: #fd562a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.exp-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 4px;
+}
+.exp-company {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #615978;
+    font-weight: normal;
+    margin-bottom: 14px;
+}
+.exp-list {
+    padding-left: 20px;
+    margin: 0;
+}
+.exp-list li {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 6px;
+}
+
+/* ── Skills Section ── */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 28px 24px;
+    width: calc(11.11% - 20px);
+    min-width: 110px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: default;
+}
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(253,86,42,0.15);
+}
+.skill-icon {
+    font-size: 40px;
+}
+.skill-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+/* ── Projects Section ── */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.project-card {
+    width: calc(50% - 12px);
+}
+.project-card-inner {
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 36px 32px;
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: #fff;
+}
+.project-card-inner:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 36px rgba(253,86,42,0.12);
+}
+.project-icon {
+    width: 56px;
+    height: 56px;
+    background: #fff3ef;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fd562a;
+    margin-bottom: 18px;
+}
+.project-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 4px;
+}
+.project-type {
+    font-size: 13px;
+    color: #fd562a;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.project-desc {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #615978;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #fd562a;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: gap 0.2s;
+}
+.project-link:hover {
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .experience-timeline {
+        padding-left: 28px;
+    }
+    .exp-dot {
+        left: -24px;
+    }
+    .skill-card {
+        min-width: 90px;
+        padding: 20px 16px;
+    }
+    .skill-icon {
+        font-size: 32px;
+    }
+    .project-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        gap: 12px;
+    }
+    .skill-card {
+        min-width: 80px;
+        padding: 16px 12px;
+    }
+}
