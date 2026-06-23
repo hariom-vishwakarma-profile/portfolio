@@ -2020,7 +2020,7 @@ a.back-to-top {
 .experience-timeline::before {
     content: '';
     position: absolute;
-    left: 10px;
+    left: 12px;
     top: 0;
     bottom: 0;
     width: 3px;
