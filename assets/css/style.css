@@ -202,6 +202,7 @@ a.header-navbar-ul-li-a:hover {
 
 .image-banner-box-2-img img {
     width: 66%;
+    border-radius: 10px;
 }
 
 .image-banner-banner {
